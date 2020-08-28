@@ -1,0 +1,2 @@
+model_checkpoint_path: "stock_LSTM"
+all_model_checkpoint_paths: "stock_LSTM"
