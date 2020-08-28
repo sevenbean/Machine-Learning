@@ -1,0 +1,20 @@
+import pandas as pd
+import  numpy as np
+# 从列表中构建series
+mylist=list("abcdefghijklmnopqrstuvwxyz")
+myarr=np.arange(26)
+mydict=dict(zip(mylist,myarr))
+ser1=pd.Series(mylist)
+ser2=pd.Series(myarr)
+ser3=pd.Series(mydict)
+# print(ser1)
+# print(ser2)
+# print(ser3)
+# df=ser3.to_frame()
+# df1=ser2.to_frame()
+# print(df)
+df=pd.DataFrame({"zimu":mylist,"number":myarr})
+df1=ser3.to_frame()
+print(df.head(3))
+print("*"*50)
+print(df1.head(3))
